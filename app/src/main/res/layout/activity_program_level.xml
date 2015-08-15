@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.riiwards.def.riiwardsloyalty.ProgramLevel">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="SELECT THE PROGRAM LEVEL"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="137dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:src="@mipmap/poriiward"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="240dp"
+        android:layout_alignParentEnd="false"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tableRow">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BASIC $9"
+            android:id="@+id/btn_basic"
+            android:layout_gravity="bottom"
+            android:background="@drawable/roundcorner"
+            android:textColor="#0F0" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADVANCED $19"
+            android:id="@+id/btn_advanced"
+            android:layout_gravity="bottom"
+            android:background="@drawable/roundcorner"
+            android:layout_marginLeft="3dp"
+            android:textColor="#FFF" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PREMIUM $29"
+            android:id="@+id/btn_premium"
+            android:layout_gravity="bottom"
+            android:background="@drawable/roundcorner"
+            android:layout_marginLeft="3dp"
+            android:textColor="#FFF" />
+    </TableRow>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/deftext"
+        android:id="@+id/ltext1"
+        android:layout_alignTop="@+id/tableRow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="171dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/ltext1"
+        android:id="@+id/ltext2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learn More"
+        android:id="@+id/btn_lm"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/imageView"
+        android:layout_toStartOf="@+id/imageView"
+        android:background="@drawable/roundcorner"
+        android:textColor="#FFF" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:id="@+id/btn_su"
+        android:layout_alignTop="@+id/btn_lm"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:background="@drawable/roundcorner"
+        android:textColor="#FFF" />
+
+</RelativeLayout>

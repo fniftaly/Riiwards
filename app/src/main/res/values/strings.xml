@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Riiwards Loyalty</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_basic">BASIC $9</string>
+    <string name="btn_advanced">ADVANCED $19</string>
+    <string name="btn_primium">PREMIUM $29</string>
+    <string name="ltext1">PER VISIT LOYALTY+BIRTHDAY CLUB ONLY $9/MONTH UNLIMITED USERS</string>
+    <string name="deftext">Customers are automatically enroled when the swipe their card. Or when
+    they enter their phone if they pay by cash. You decide what reward go give after how many visits.</string>
+    <string name="title_activity_sign_in">SignInActivity</string>
+   <string name="panchcard">Punch\nCard</string>
+    <string name="progdiscount">Progressive\nDiscount</string>
+    <string name="altdiscount">Alternative\nVisit Discount</string>
+    <string name="title_activity_punch_card">PunchCard</string>
+    <string name="title_activity_progressive_discount">ProgressiveDiscount</string>
+    <string name="title_activity_alternative_discount">AlternativeDiscount</string>
+    <string name="title_activity_program_level">ProgramLevel</string>
+    <string name="atvisitnumber">At visit #</string>
+    <string name="punchdescription">Descipiton text will be here. This is just testing text...</string>
+    <string name="punchsubmit">Submit</string>
+    <string name="programtemplate">SELECT PROGRAM TEMPLATE</string>
+    <string name="progdiscountdescription">Text description for progressive discount program</string>
+    <string name="progvisitnumber">Visit #</string>
+    <string name="progdiscountnumber">Discount</string>
+    <string name="templetsubmit">Submit</string>
+    <string name="textviewdiscountlevel">Discount Level</string>
+    <string name="disclevellow">low</string>
+    <string name="disclevelhigh">high</string>
+    <string name="disclevelmed">med</string>
+    <string name="altdiscountdescription">Text for alternate discount goes here</string>
+</resources>

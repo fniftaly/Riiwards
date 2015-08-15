@@ -1,0 +1,283 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.riiwards.def.riiwardsloyalty.ProgressiveDiscount">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:src="@mipmap/basicsignup" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="350dp"
+        android:id="@+id/tableRow2">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3"
+            android:src="@mipmap/birthday" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_weight="1"
+            android:hint="Enter Birthday Club Reward" />
+    </TableRow>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/programtemplate"
+        android:id="@+id/txtprogramtemplate"
+        android:layout_alignTop="@+id/tableRow2"
+        android:layout_marginTop="75dp"
+        android:textSize="18dp"
+        android:textIsSelectable="false"
+        android:layout_marginLeft="20dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtprogramtemplate"
+        android:layout_alignStart="@+id/txtprogramtemplate"
+        android:baselineAligned="false"
+        android:id="@+id/tableLayout"
+        android:layout_below="@+id/txtprogramtemplate"
+        android:layout_marginTop="30dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/panchcard"
+                android:id="@+id/punchcard"
+                android:layout_column="2"
+                android:background="@drawable/roundcorner"
+                android:textColor="#FFF" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/progdiscount"
+                android:id="@+id/progdiscount"
+                android:layout_column="10"
+                android:background="@drawable/roundcorner"
+                android:layout_marginLeft="10dp"
+                android:textColor="#0F0" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/altdiscount"
+                android:id="@+id/altdiscount"
+                android:layout_column="6"
+                android:background="@drawable/roundcorner"
+                android:layout_marginLeft="10dp"
+                android:textColor="#FFF" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/progdiscountdescription"
+        android:id="@+id/prgdiscount"
+        android:layout_below="@+id/tableLayout"
+        android:layout_alignLeft="@+id/tableLayout"
+        android:layout_alignStart="@+id/tableLayout"
+        android:layout_marginTop="36dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/prgdiscount"
+        android:layout_marginTop="36dp"
+        android:layout_alignRight="@+id/prgdiscount"
+        android:layout_alignEnd="@+id/prgdiscount"
+        android:layout_marginBottom="90dp"
+        android:id="@+id/tableLayout2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/progdiscounttbrow1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/progvisitnumber"
+                android:id="@+id/progvisitnum"
+                android:layout_column="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:id="@+id/prvisit1"
+                android:layout_column="4"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:id="@+id/prvisit2"
+                android:layout_column="8"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:id="@+id/prvisit3"
+                android:layout_column="11"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:id="@+id/prvisit4"
+                android:layout_column="14"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:id="@+id/prvisit5"
+                android:layout_column="17"
+                android:layout_marginLeft="30dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/progdiscounttbrow2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/progdiscountnumber"
+                android:id="@+id/progdiscnum"
+                android:layout_column="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5%"
+                android:id="@+id/prdisc1"
+                android:layout_column="4"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7%"
+                android:id="@+id/prdisc2"
+                android:layout_column="8"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10%"
+                android:id="@+id/prdisc3"
+                android:layout_column="11"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12%"
+                android:id="@+id/prdisc4"
+                android:layout_column="14"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15%"
+                android:id="@+id/prdisc5"
+                android:layout_column="17"
+                android:layout_marginLeft="30dp" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/textviewdiscountlevel"
+        android:id="@+id/discountlevel"
+        android:layout_alignTop="@+id/tableLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="70dp" />
+    <RadioGroup android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp">
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/disclevellow"
+        android:id="@+id/rbtlow"
+        android:checked="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/disclevelmed"
+        android:id="@+id/rbtmed"
+        android:checked="false"
+        android:layout_toRightOf="@+id/radioButton"
+        android:layout_toEndOf="@+id/radioButton" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/disclevelhigh"
+        android:id="@+id/rbthigh"
+        android:checked="false"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/radioButton6"
+        android:layout_toEndOf="@+id/radioButton6" />
+</RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/templetsubmit"
+        android:id="@+id/tmpsubmit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/prgdiscount"
+        android:layout_alignEnd="@+id/prgdiscount"
+        android:background="@drawable/roundcorner"
+        android:textColor="#FFF" />
+
+</RelativeLayout>
