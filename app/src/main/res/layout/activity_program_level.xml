@@ -23,7 +23,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="43dp"
-        android:src="@mipmap/poriiward"/>
+        android:src="@mipmap/pntrwd"
+        android:contentDescription="" />
 
     <TableRow
         android:layout_width="match_parent"

@@ -1,283 +1,281 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.riiwards.def.riiwardsloyalty.ProgressiveDiscount">
+    android:orientation="vertical"
+    tools:context="com.example.def.androidmysql.progressive"
+    android:background="#FFF">
 
-    <ImageView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView2"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="1dp"
-        android:src="@mipmap/basicsignup" />
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/imageView2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="350dp"
-        android:id="@+id/tableRow2">
+        android:gravity="center"
+        android:id="@+id/linearLayout3"
+        android:layout_alignParentTop="true">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/basic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressive"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:layout_height="wrap_content"
             android:id="@+id/imageView3"
-            android:src="@mipmap/birthday" />
+            android:src="@mipmap/rwdbd"
+            android:layout_width="wrap_content" />
 
         <EditText
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/editText"
-            android:layout_weight="1"
-            android:hint="Enter Birthday Club Reward" />
-    </TableRow>
+            android:layout_width="match_parent"
+            android:hint="ENTER BIRTHDAY REWARD" />
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/programtemplate"
-        android:id="@+id/txtprogramtemplate"
-        android:layout_alignTop="@+id/tableRow2"
-        android:layout_marginTop="75dp"
-        android:textSize="18dp"
-        android:textIsSelectable="false"
-        android:layout_marginLeft="20dp" />
+        android:text="SELECT PROGRAM TEMPLATE"
+        android:id="@+id/slctproglevel"
+        android:paddingTop="30dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="30dp" />
 
-    <TableLayout
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/txtprogramtemplate"
-        android:layout_alignStart="@+id/txtprogramtemplate"
-        android:baselineAligned="false"
-        android:id="@+id/tableLayout"
-        android:layout_below="@+id/txtprogramtemplate"
-        android:layout_marginTop="30dp">
+        android:layout_height="wrap_content">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_punch_card"
+            android:id="@+id/punchcard"
+            android:background="@drawable/roundcorner"
+            android:textColor="#FFF" />
 
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/panchcard"
-                android:id="@+id/punchcard"
-                android:layout_column="2"
-                android:background="@drawable/roundcorner"
-                android:textColor="#FFF" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_prog_discount"
+            android:id="@+id/progdiscount"
+            android:background="@drawable/roundcorner"
+            android:layout_marginLeft="6dp"
+            android:textColor="#0F0" />
 
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/progdiscount"
-                android:id="@+id/progdiscount"
-                android:layout_column="10"
-                android:background="@drawable/roundcorner"
-                android:layout_marginLeft="10dp"
-                android:textColor="#0F0" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_alt_discount"
+            android:id="@+id/altdiscount"
+            android:background="@drawable/roundcorner"
+            android:layout_marginLeft="6dp"
+            android:textColor="#FFF" />
+    </LinearLayout>
 
-            <Button
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/altdiscount"
-                android:id="@+id/altdiscount"
-                android:layout_column="6"
-                android:background="@drawable/roundcorner"
-                android:layout_marginLeft="10dp"
-                android:textColor="#FFF" />
-        </TableRow>
-    </TableLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/progdiscountdescription"
-        android:id="@+id/prgdiscount"
-        android:layout_below="@+id/tableLayout"
-        android:layout_alignLeft="@+id/tableLayout"
-        android:layout_alignStart="@+id/tableLayout"
-        android:layout_marginTop="36dp" />
-
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/prgdiscount"
-        android:layout_marginTop="36dp"
-        android:layout_alignRight="@+id/prgdiscount"
-        android:layout_alignEnd="@+id/prgdiscount"
-        android:layout_marginBottom="90dp"
-        android:id="@+id/tableLayout2">
-
-        <TableRow
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="fill_parent"
             android:layout_height="match_parent"
-            android:id="@+id/progdiscounttbrow1">
+            android:text="@string/increas_disct_each_vst"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/eachvisitdisct"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/visitextval"
+            android:id="@+id/txtvisitnum"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.80">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/progvisitnumber"
-                android:id="@+id/progvisitnum"
-                android:layout_column="1" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="1"
-                android:id="@+id/prvisit1"
-                android:layout_column="4"
-                android:layout_marginLeft="30dp" />
+                android:id="@+id/textView3"
+                android:layout_weight="0.25" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="2"
-                android:id="@+id/prvisit2"
-                android:layout_column="8"
-                android:layout_marginLeft="30dp" />
+                android:id="@+id/textView2"
+                android:layout_weight="0.25" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="3"
-                android:id="@+id/prvisit3"
-                android:layout_column="11"
-                android:layout_marginLeft="30dp" />
+                android:id="@+id/textView4"
+                android:layout_weight="0.25" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="4"
-                android:id="@+id/prvisit4"
-                android:layout_column="14"
-                android:layout_marginLeft="30dp" />
+                android:id="@+id/textView5"
+                android:layout_weight="0.25" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="5"
-                android:id="@+id/prvisit5"
-                android:layout_column="17"
-                android:layout_marginLeft="30dp" />
-        </TableRow>
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/progdiscounttbrow2">
+                android:id="@+id/textView6"
+                android:layout_weight="0.25" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/discounttextval"
+            android:id="@+id/discounttext"
+            android:layout_weight="0.35" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.80"
+            android:paddingBottom="0dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/progdiscountnumber"
-                android:id="@+id/progdiscnum"
-                android:layout_column="1" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="5%"
                 android:id="@+id/prdisc1"
-                android:layout_column="4"
-                android:layout_marginLeft="30dp" />
+                android:layout_weight="0.25" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="7%"
                 android:id="@+id/prdisc2"
-                android:layout_column="8"
-                android:layout_marginLeft="30dp" />
+                android:layout_weight="0.25" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="10%"
                 android:id="@+id/prdisc3"
-                android:layout_column="11"
-                android:layout_marginLeft="30dp" />
+                android:layout_weight="0.25" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="12%"
                 android:id="@+id/prdisc4"
-                android:layout_column="14"
-                android:layout_marginLeft="30dp" />
+                android:layout_weight="0.25" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="15%"
                 android:id="@+id/prdisc5"
-                android:layout_column="17"
-                android:layout_marginLeft="30dp" />
-        </TableRow>
-    </TableLayout>
+                android:layout_weight="0.25" />
+        </LinearLayout>
+    </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/textviewdiscountlevel"
-        android:id="@+id/discountlevel"
-        android:layout_alignTop="@+id/tableLayout2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="70dp" />
-    <RadioGroup android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="450dp">
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/disclevellow"
-        android:id="@+id/rbtlow"
-        android:checked="false"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:paddingTop="15dp">
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/disclevelmed"
-        android:id="@+id/rbtmed"
-        android:checked="false"
-        android:layout_toRightOf="@+id/radioButton"
-        android:layout_toEndOf="@+id/radioButton" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/txtvalfordiscountslevel"
+            android:id="@+id/txtdiscountslevel"
+            android:layout_weight="0.30"
+            android:layout_marginTop="10dp" />
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/disclevelhigh"
-        android:id="@+id/rbthigh"
-        android:checked="false"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/radioButton6"
-        android:layout_toEndOf="@+id/radioButton6" />
-</RadioGroup>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.70"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbtlow"
+                android:text="@string/btn_low_disck"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbtmed"
+                android:text="@string/btn_med_disck"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbthigh"
+                android:text="@string/btn_high_disck"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/templetsubmit"
-        android:id="@+id/tmpsubmit"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/prgdiscount"
-        android:layout_alignEnd="@+id/prgdiscount"
+        android:text="@string/btn_sub_prog"
+        android:id="@+id/btn_prog_sub"
         android:background="@drawable/roundcorner"
-        android:textColor="#FFF" />
+        android:textColor="#FFF"
+        android:layout_marginTop="10dp" />
 
-</RelativeLayout>
+</LinearLayout>

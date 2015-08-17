@@ -15,7 +15,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="1dp"
-        android:src="@mipmap/basicsignup" />
+        android:src="@mipmap/basic" />
 
     <TableRow
         android:layout_width="match_parent"
