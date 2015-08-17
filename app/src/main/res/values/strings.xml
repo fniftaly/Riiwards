@@ -16,8 +16,8 @@
     <string name="title_activity_progressive_discount">ProgressiveDiscount</string>
     <string name="title_activity_alternative_discount">AlternativeDiscount</string>
     <string name="title_activity_program_level">ProgramLevel</string>
-    <string name="atvisitnumber">At visit #</string>
-    <string name="punchdescription">Descipiton text will be here. This is just testing text...</string>
+    <!--<string name="atvisitnumber">At visit #</string>-->
+    <!--<string name="punchdescription">Descipiton text will be here. This is just testing text...</string>-->
     <string name="punchsubmit">Submit</string>
     <string name="programtemplate">SELECT PROGRAM TEMPLATE</string>
     <string name="progdiscountdescription">Text description for progressive discount program</string>
@@ -29,4 +29,21 @@
     <string name="disclevelhigh">high</string>
     <string name="disclevelmed">med</string>
     <string name="altdiscountdescription">Text for alternate discount goes here</string>
+    <string name="theproglevel">SELECT THE PROGRAM LEVEL</string>
+
+    <string name="title_activity_progressive">progressive</string>
+    <string name="btn_punch_card">PUNCH\nCARD</string>
+    <string name="btn_prog_discount">PROGRESSIVE\nDISCOUNT</string>
+    <string name="btn_alt_discount">ALTERNATE\nVISIT DISCOUNT</string>
+    <string name="increas_disct_each_vst">Increase Discaunts On Each Subsuquent Visit</string>
+    <string name="discounttextval">Discount</string>
+    <string name="visitextval">Visit #</string>
+    <string name="txtvalfordiscountslevel">Discounts Level</string>
+    <string name="btn_low_disck">low</string>
+    <string name="btn_med_disck">med</string>
+    <string name="btn_high_disck">high</string>
+    <string name="btn_sub_prog">SUBMIT</string>
+    <string name="title_activity_alternative">alternative</string>
+    <string name="txt_punch_atvisit">At Visit #</string>
+    <string name="btn_punchcard_sub">SUBMIT</string>
 </resources>
